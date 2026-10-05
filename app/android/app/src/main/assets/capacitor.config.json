@@ -1,0 +1,13 @@
+{
+	"appId": "app.classroomdashboard.teacher",
+	"appName": "Classroom Dashboard",
+	"webDir": "www",
+	"backgroundColor": "#ffffff",
+	"ios": {
+		"contentInset": "always",
+		"limitsNavigationsToAppBoundDomains": false
+	},
+	"android": {
+		"allowMixedContent": false
+	}
+}
