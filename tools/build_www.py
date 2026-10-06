@@ -1,6 +1,8 @@
 import re,base64,sys,os,json
-SRC="/home/claude/classroom-dashboard-working/Classroom Dashboard.html"
-ROOT="/home/claude/mobile-apps"
+HERE=os.path.dirname(os.path.abspath(__file__))
+ROOT=os.path.dirname(HERE)
+SRC=os.path.join(ROOT,"source","Classroom Dashboard.html")
+if not os.path.exists(SRC): SRC="/home/claude/classroom-dashboard-working/Classroom Dashboard.html"
 s=open(SRC,encoding="utf-8").read()
 def b64(p): return "data:image/png;base64,"+base64.b64encode(open(p,"rb").read()).decode()
 # --- remove school / ministry identity -> neutral branding
